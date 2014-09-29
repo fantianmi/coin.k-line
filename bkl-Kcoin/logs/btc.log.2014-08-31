@@ -1,0 +1,4 @@
+2014-08-31 16:49:08  [ main:0 ] - [ INFO ]  Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-08-31 16:49:08  [ main:252 ] - [ INFO ]  jetty-6.1.26
+2014-08-31 16:49:11  [ main:3647 ] - [ INFO ]  Started SelectChannelConnector@0.0.0.0:80
+2014-08-31 16:50:41  [ 1622714614@qtp-1357852575-2:93122 ] - [ INFO ]  user: fantianmi@163.com login, ip address: 0:0:0:0:0:0:0:1

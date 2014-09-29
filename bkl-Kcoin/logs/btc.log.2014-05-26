@@ -1,0 +1,85 @@
+2014-05-26 22:11:36  [ main:0 ] - [ INFO ]  Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-05-26 22:11:37  [ main:797 ] - [ INFO ]  jetty-6.1.26
+2014-05-26 22:11:39  [ main:3110 ] - [ INFO ]  Started SelectChannelConnector@0.0.0.0:80
+2014-05-26 22:15:02  [ main:0 ] - [ INFO ]  Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-05-26 22:15:02  [ main:156 ] - [ INFO ]  jetty-6.1.26
+2014-05-26 22:15:03  [ main:1219 ] - [ INFO ]  Started SelectChannelConnector@0.0.0.0:80
+2014-05-26 22:15:07  [ 25528996@qtp-7065329-0:4844 ] - [ WARN ]  Error compiling file: C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\Jetty_0_0_0_0_80_webapp____.8p7k2g\jsp\org\apache\jsp\header_jsp.java
+2014-05-26 22:15:07  [ 25528996@qtp-7065329-0:4844 ] - [ WARN ]  /
+org.apache.jasper.JasperException: PWC6033: Unable to compile class for JSP
+
+PWC6199: Generated servlet error:
+Syntax error, insert "else Statement" to complete IfStatement
+
+PWC6199: Generated servlet error:
+Syntax error, insert "}" to complete Block
+
+PWC6199: Generated servlet error:
+Syntax error on token "}", delete this token
+
+PWC6199: Generated servlet error:
+Syntax error, insert "}" to complete ClassBody
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:107)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:280)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:350)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:411)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:592)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:344)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:470)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:364)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.servlet.Dispatcher.include(Dispatcher.java:192)
+	at org.apache.jasper.runtime.JspRuntimeLibrary.include(JspRuntimeLibrary.java:997)
+	at org.apache.jsp.index_jsp._jspService(org.apache.jsp.index_jsp:79)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:373)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:470)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:364)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:401)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:327)
+	at org.mortbay.jetty.servlet.Dispatcher.forward(Dispatcher.java:126)
+	at org.mortbay.jetty.servlet.DefaultServlet.doGet(DefaultServlet.java:503)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:511)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1221)
+	at com.km.coins.servlet.RootFilter.doFilter(RootFilter.java:40)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
+	at com.km.common.filter.CharsetFilter.doFilter(CharsetFilter.java:27)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:399)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+2014-05-26 22:17:15  [ main:0 ] - [ INFO ]  Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-05-26 22:17:15  [ main:157 ] - [ INFO ]  jetty-6.1.26
+2014-05-26 22:17:16  [ main:1250 ] - [ INFO ]  Started SelectChannelConnector@0.0.0.0:80
+2014-05-26 22:44:35  [ main:0 ] - [ INFO ]  Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-05-26 22:44:35  [ main:172 ] - [ INFO ]  jetty-6.1.26
+2014-05-26 22:44:36  [ main:1313 ] - [ INFO ]  Started SelectChannelConnector@0.0.0.0:80
+2014-05-26 22:45:30  [ 16092256@qtp-7065329-4:54953 ] - [ INFO ]  user: ggjucheng@163.com login, ip address: 127.0.0.1

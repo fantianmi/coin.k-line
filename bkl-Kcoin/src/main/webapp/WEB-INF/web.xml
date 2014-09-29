@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>Kcoin</display-name>
+
+	<listener>
+		<listener-class>com.bkl.Kcoin.listener.ServicesListener</listener-class>
+	</listener>
+	<servlet>
+		<servlet-name>open</servlet-name>
+		<servlet-class>com.bkl.Kcoin.servlet.OpenServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>open</servlet-name>
+		<url-pattern>/open/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>qoauth</servlet-name>
+		<servlet-class>com.bkl.Kcoin.servlet.login.QqServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>qoauth</servlet-name>
+		<url-pattern>/qoauth</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>woauth</servlet-name>
+		<servlet-class>com.bkl.Kcoin.servlet.login.WeiboServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>woauth</servlet-name>
+		<url-pattern>/woauth</url-pattern>
+	</servlet-mapping>
+	
+	<filter>
+		<filter-name>charsetFilter</filter-name>
+		<filter-class>com.km.common.filter.CharsetFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>charsetFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>admin_filter</filter-name>
+		<filter-class>com.km.common.servlet.ApiFilter</filter-class>
+		<init-param>
+			<param-name>session_name</param-name>
+			<param-value>adminusername</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>admin_filter</filter-name>
+		<url-pattern>/admin_api/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>backend_filter</filter-name>
+		<filter-class>com.km.common.filter.BackendFilter</filter-class>
+		<init-param>
+			<param-name>session_name</param-name>
+			<param-value>adminusername</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>backend_filter</filter-name>
+		<url-pattern>/backend/*</url-pattern>
+	</filter-mapping>
+
+
+	<filter>
+		<filter-name>root_filter</filter-name>
+		<filter-class>com.bkl.Kcoin.servlet.RootFilter</filter-class>
+		<init-param>
+			<param-name>session_name</param-name>
+			<param-value>username</param-value>
+		</init-param>
+		<init-param>
+			<param-name>urls</param-name>
+			<param-value>/btc.jsp,/ltc.jsp,/rechargeBtc.jsp,/rechargeCny.jsp,/withdrawBtc.jsp,/withdrawCny.jsp,/entrust.jsp,/plan.jsp,/record.jsp,/security.jsp,/userinfo.jsp,/subscribe.jsp</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>root_filter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>user</servlet-name>
+		<servlet-class>com.bkl.Kcoin.servlet.UserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>user</servlet-name>
+		<url-pattern>/api/user/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>cash</servlet-name>
+		<servlet-class>com.bkl.Kcoin.servlet.CashServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>cash</servlet-name>
+		<url-pattern>/api/cash/*</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>subscribe</servlet-name>
+		<servlet-class>com.bkl.Kcoin.servlet.SubscribeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>subscribe</servlet-name>
+		<url-pattern>/api/subscribe/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>transfer</servlet-name>
+		<servlet-class>com.bkl.Kcoin.servlet.TransferServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>transfer</servlet-name>
+		<url-pattern>/api/transfer/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>trade</servlet-name>
+		<servlet-class>com.bkl.Kcoin.servlet.TradeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>trade</servlet-name>
+		<url-pattern>/api/trade/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>plantrade</servlet-name>
+		<servlet-class>com.bkl.Kcoin.servlet.PlanTradeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>plantrade</servlet-name>
+		<url-pattern>/api/plantrade/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>admin</servlet-name>
+		<servlet-class>com.bkl.Kcoin.servlet.AdminServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>admin</servlet-name>
+		<url-pattern>/admin_api/*</url-pattern>
+	</servlet-mapping>
+
+	<!-- <error-page> <error-code>404</error-code> <location>/404.jsp</location> 
+		</error-page> <error-page> <error-code>500</error-code> <location>/500.jsp</location> 
+		</error-page> -->
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>

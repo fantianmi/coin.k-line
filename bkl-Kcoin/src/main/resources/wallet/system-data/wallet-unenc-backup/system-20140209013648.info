@@ -1,0 +1,12 @@
+multiBit.info,1
+walletVersion,2
+receive,n2dBuDNDk5J3ksnzAnJFJJKi2M5omR9ujf,default
+property,receiveAddress,n2dBuDNDk5J3ksnzAnJFJJKi2M5omR9ujf
+property,validationAmountIsTooSmall,false
+property,receiveAmount,
+property,walletBackupFile,G%3A%5Cmobile%5Cspace%5Cggjucheng.keepmoving%5Ckm-coins%5Csrc%5Cmain%5Cresources%5Cwallet%5Csystem-data%5Crolling-backup%5Csystem-20140209013106.wallet
+property,walletDescription,km
+property,receiveLabel,default
+property,sendAmount,5
+property,sendAddress,n1U9oFGisSVBab8WDdvpSbqXMg5E3h3Avq
+property,sendLabel,

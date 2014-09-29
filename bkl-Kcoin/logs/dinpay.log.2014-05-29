@@ -1,0 +1,8 @@
+2014-05-29 21:23:46  [ main:0 ] - [ INFO ]  Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-05-29 21:23:47  [ main:406 ] - [ INFO ]  jetty-6.1.26
+2014-05-29 21:23:50  [ main:3203 ] - [ INFO ]  Started SelectChannelConnector@0.0.0.0:80
+2014-05-29 21:34:11  [ main:0 ] - [ INFO ]  Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2014-05-29 21:34:11  [ main:156 ] - [ INFO ]  jetty-6.1.26
+2014-05-29 21:34:12  [ main:1203 ] - [ INFO ]  Started SelectChannelConnector@0.0.0.0:80
+2014-05-29 21:34:20  [ 25528996@qtp-7065329-0:9797 ] - [ INFO ]  user: ggjucheng@163.com login, ip address: 127.0.0.1
+2014-05-29 21:38:21  [ 32573029@qtp-7065329-9:250000 ] - [ INFO ]  user: ggjucheng@163.com login, ip address: 127.0.0.1

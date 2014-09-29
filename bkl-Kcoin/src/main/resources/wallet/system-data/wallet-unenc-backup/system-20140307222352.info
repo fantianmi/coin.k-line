@@ -1,0 +1,12 @@
+multiBit.info,1
+walletVersion,2
+receive,mrKwoPYMN5vKykAc3UHYsgi9uPndZ1wSf8,
+receive,mvd1bJ8c5TXQF1M7YYFcNCWWGhMtsGU7Rz,
+receive,mhT3oqe2h5viLinjtzhX4BdZDZD6AtAJtV,
+receive,mt3Rso3XhMDiL3Q89dGvLkvavxGS4eMepr,page
+receive,mwTSr3YdzCMvmpR1L1kRV5Q24c9ZfnAHyG,blue
+property,walletDescription,km
+property,receiveAmount,
+property,receiveLabel,page
+property,receiveAddress,mt3Rso3XhMDiL3Q89dGvLkvavxGS4eMepr
+property,walletBackupFile,G%3A%5Cmobile%5Cspace%5Cggjucheng.keepmoving%5Ckm-coins%5Csrc%5Cmain%5Cresources%5Cwallet%5Csystem-data%5Crolling-backup%5Csystem-20140225191100.wallet
